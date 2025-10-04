@@ -4,7 +4,7 @@ An interactive web application built with HTML, CSS, and JavaScript that connect
 
 ### Explore real-time lunar weather with data powered by **NASA POWER API**
 
-![Lunar Weather Banner](https://i.imgur.com/t7rZKQm.png) <!-- Optional: Replace with your own image link -->
+![Lunar Weather Banner](https://www.chromethemer.com/backgrounds/google/images/solar-eclipse-google-background.jpg)
 
 ---
 
