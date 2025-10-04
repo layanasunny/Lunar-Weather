@@ -34,3 +34,28 @@ It connects to the **NASA POWER API** to fetch **real-time lunar environmental d
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/lunar-weather-web-app.git
+
+```
+## 🛰️ API Reference
+
+### [NASA POWER API](https://power.larc.nasa.gov/)
+The **NASA POWER (Prediction of Worldwide Energy Resources)** API provides access to real-time environmental and meteorological data, including solar radiation, temperature, and atmospheric conditions.  
+Your web app uses this API to fetch **live lunar weather data** and display it dynamically.
+
+---
+
+## 💻 Project Structure
+
+```bash
+lunar-weather-web-app/
+│
+├── frontend/
+│   ├── index.html
+│   ├── styles/
+│   │   └── main.css
+│   └── js/
+│       └── app.js
+│
+└── README.md
+
+
