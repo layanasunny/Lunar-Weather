@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Weather - Celestial Forecasts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <script src="main.js"></script>
+     <body>
+         <!-- Enhanced Galaxy Background -->
+    <div class="galaxy-bg" id="galaxyBg"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-moon"></i>
+                <h1>Lunar Weather</h1>
+            </div>
+            <p class="tagline">Celestial forecasts for earthly conditions</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search for cities, districts, or states...">
+                <button id="searchBtn">Search <i class="fas fa-search"></i></button>
+            </div>
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Scanning atmospheric data...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            Location not found. Please try another search.
+        </div>
+
+        <div class="success-message" id="successMessage">
+            Weather data loaded successfully!
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="location">
+                <h2 class="city-name" id="cityName">New York</h2>
+                <span class="country" id="country">US</span>
+            </div>
+
+            <div class="current-weather">
+                <div>
+                    <div class="temperature" id="temperature">24°C</div>
+                    <div class="weather-description" id="weatherDescription">Clear Sky</div>
+                </div>
+                <div class="weather-icon">
+                    <i class="fas fa-sun" id="weatherIcon"></i>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="detail-info">
+                        <h3>HUMIDITY</h3>
+                        <p id="humidity">65%</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="detail-info">
+                        <h3>WIND SPEED</h3>
+                        <p id="windSpeed">5.2 m/s</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <div class="detail-info">
+                        <h3>FEELS LIKE</h3>
+                        <p id="feelsLike">26°C</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <div class="detail-info">
+                        <h3>PRESSURE</h3>
+                        <p id="pressure">1015 hPa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nasa-data">
+            <h2 class="section-title"><i class="fas fa-satellite"></i> NASA Environmental Data</h2>
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="data-label">AIR QUALITY INDEX</div>
+                    <div class="data-value" id="airQuality">42</div>
+                    <div class="data-label">Good</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-label">UV INDEX</div>
+                    <div class="data-value" id="uvIndex">5.2</div>
+                    <div class="data-label">Moderate</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-label">VISIBILITY</div>
+                    <div class="data-value" id="visibility">10 km</div>
+                    <div class="data-label">Clear</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-label">SUNLIGHT INTENSITY</div>
+                    <div class="data-value" id="sunIntensity">78%</div>
+                    <div class="data-label">High</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>NASA Hackathon Project | Lunar Weather | Available locations weather data</p>
+        </footer>
+    </div>
+</body>
+</html>
